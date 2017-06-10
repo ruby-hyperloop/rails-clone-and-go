@@ -20,9 +20,11 @@ You can also clone the repo into a [Cloud9 virtual IDE](https://c9.io) workspace
 
 **Once you have cloned the repo (or created your Cloud9 workspace) run `bin/setup` in a console window.**
 
+**NOTE:  if you don't use mysql or rvm, you will have to manually walkthrough the setup steps.  [Details](setup-details)
+
 Some steps in the setup can take 2-3 minutes... be patient...
 
-**Once setup completes you will need to run `rvm use 2.3.1` after setup completes to switch the Ruby 2.3.1.**
+**Once setup completes you will need to run `rvm use 2.3.1` to switch the Ruby 2.3.1.**
 
 Once you are installed you can fire up the server and the opal-hot-reloader by running `./bin/hyperloop` in a console window (in Cloud9 you can also use the run command at the top navbar.)  
 
@@ -63,3 +65,15 @@ Hyperloop Operations keep Stores and Components separated, provides a central pl
 #### Have Fun!
 
 </div>
+
+### Setup Details
+
+Setup does the following.  If you are not using rvm or mysql you will have to manually walk through these steps:
+
+1. Make sure a recent version (we use 2.3.1, but 2.4.0 also works fine) of ruby is installed
+2. Make sure bundler is installed
+3. Update the `config/database.yml` file
+4. Change the applcation name in `config/application.rb`
+5. Remove (or change) the ports listed in the Procfile (in the outer directory)
+6. Make sure your DB server is started
+7. Start rails up  (on the first start it will take a few minutes as it builds the system asset files.)
