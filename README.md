@@ -18,7 +18,7 @@ Clone this repo onto your local machine and you will be ready to code up a full 
 
 You can also clone the repo into a [Cloud9 virtual IDE](https://c9.io) workspace for an even quicker install ([details here.](https://github.com/ruby-hyperloop/rails-clone-and-go/blob/master/cloud9-setup.md))
 
-Once you have cloned the repo (or created your Cloud9 workspace) run `bin/setup` in a console window.
+**Once you have cloned the repo (or created your Cloud9 workspace) run `bin/setup` in a console window.**
 
 You will need to run `rvm use 2.3.1` after setup completes to switch the Ruby 2.3.1.
 
@@ -26,7 +26,7 @@ Once you are installed you can fire up the server and the opal-hot-reloader by r
 
 Once your server is booted visit your newly created Application's home page and you should see a welcome message.  On Cloud9 you can use the preview button (in the top navbar) to bring up your app right in the IDE, which works very well with the hot-reloader.
 
-## Hyperloop Quick Start
+## Hyperloop Quick Overview
 
 #### Adding a more Components:
 
@@ -38,7 +38,7 @@ The repo already routes everything to a top level `App` component using this rou
 
 `get '/(*other)', to: 'hyperloop#app'`
 
-To have your application respond to different routes and display different components you will add more routes to the `App` component.  See the [hyper-router gem](https://github.com/ruby-hyperloop/hyper-router) for more info.
+To have your application respond to different routes and display different components you will add more routes to the `App` component.  The sample App component has some things to try. See the [hyper-router gem](https://github.com/ruby-hyperloop/hyper-router) for more info.
 
 #### Models
 
