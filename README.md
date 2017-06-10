@@ -20,7 +20,7 @@ You can also clone the repo into a [Cloud9 virtual IDE](https://c9.io) workspace
 
 **Once you have cloned the repo (or created your Cloud9 workspace) run `bin/setup` in a console window.**
 
-**NOTE:  if you don't use mysql or rvm, you will have to manually walkthrough the setup steps.  [Details](#setup-details)
+**NOTE:  if you don't use mysql or rvm, you will have to manually walkthrough the setup steps.  [Details](#setup-details)**
 
 Some steps in the setup can take 2-3 minutes... be patient...
 
