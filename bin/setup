@@ -24,11 +24,6 @@ chdir APP_ROOT do
   system! 'rvm 2.3.1 do gem install bundler --conservative'
   system('rvm 2.3.1 do bundle check') || system!('rvm 2.3.1 do bundle install')
   
-  puts '== Updating database yml file =='
-  db_yml_path = File.join(APP_ROOT, 'config', 'database.yml')
-  IO.write(db_yml_path, File.open(db_yml_path) {|f| f.read.gsub(/hyperloop_/, "#{APP_NAME}_")})
-  IO.write(db_yml_path, File.open(db_yml_path) {|f| f.read.gsub(/HYPERLOOP_PRODUCTION_DB_PASSWORD/, "#{APP_NAME.upcase}_PASSWORD")})
-
   puts "== Updating app name to #{APP_CLASS} =="
   application_path = File.join(APP_ROOT, 'config', 'application.rb')
   IO.write(application_path, File.open(application_path) {|f| f.read.gsub(/HyperloopCloneAndGo/, "#{APP_CLASS}")})
@@ -44,22 +39,11 @@ chdir APP_ROOT do
   end
   
   puts '== Initializing the DB =='
-  if ENV['C9_PROJECT'] && `mysql-ctl status 2>&1` =~ /stopped/
-    puts "********* starting mysql **********"
-    `mysql-ctl start`
-  end
   system('rvm 2.3.1 do bundle exec rails db:create')
   if system('rvm 2.3.1 do bundle exec rake environment')
     puts "\n\n\e[33m"
     puts "*********************************************************************************\n\n"
     puts "To finish installation switch to ruby 2.3.1 by doing an 'rvm use 2.3.1'\n"
-    puts "*********************************************************************************\n\n"
-  else
-    puts "\n\n\e[33m"
-    puts "*********************************************************************************\n\n"
-    puts "Failed to create your DB.  Make sure MySql is installed and running.\n"
-    puts "To finish installation switch to ruby 2.3.1 by doing an 'rvm use 2.3.1'\n"
-    puts "Then do a 'bundle exec rails db:create'"
     puts "*********************************************************************************\n\n"
   end
 end
