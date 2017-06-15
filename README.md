@@ -14,13 +14,13 @@
 
 <br>
 
-Clone this repo onto your local machine and you will be ready to code up a full stack Hyperloop app.  You will need to have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and optionally the [Mysql database server](https://dev.mysql.com/doc/refman/5.7/en/installing.html) installed.  
+Clone this repo onto your local machine and you will be ready to code up a full stack Hyperloop app.  You will need to have `git`, [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and optionally the [Mysql database server](https://dev.mysql.com/doc/refman/5.7/en/installing.html) installed.  
 
 You can also clone the repo into a [Cloud9 virtual IDE](https://c9.io) workspace for an even quicker install ([details here.](https://github.com/ruby-hyperloop/rails-clone-and-go/blob/master/cloud9-setup.md))
 
 **Once you have cloned the repo (or created your Cloud9 workspace) choose your branch!!!**
 
-This repo has two branches:  `master` which requires MySql, and will use Rails ActionCable for push communications.  This is great unless your development box has limited resources *or you are using Cloud9 with only a 512MB workspace*.  In this case switch to the `thin` branch by doing a 
+This repo has two branches:  `master` and `thin`.  The `master` branch requires MySql, and will use Rails ActionCable for push communications.  This is great unless your development box has limited resources *or you are using Cloud9 with only a 512MB workspace*.  In this case switch to the `thin` branch by doing a 
 ```bash
 git checkout thin
 ```
