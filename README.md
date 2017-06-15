@@ -14,13 +14,19 @@
 
 <br>
 
-Clone this repo onto your local machine and you will be ready to code up a full stack Hyperloop app.  You will need to have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and the [Mysql database server](https://dev.mysql.com/doc/refman/5.7/en/installing.html) installed.  
+Clone this repo onto your local machine and you will be ready to code up a full stack Hyperloop app.  You will need to have `git`, [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and optionally the [Mysql database server](https://dev.mysql.com/doc/refman/5.7/en/installing.html) installed.  
 
 You can also clone the repo into a [Cloud9 virtual IDE](https://c9.io) workspace for an even quicker install ([details here.](https://github.com/ruby-hyperloop/rails-clone-and-go/blob/master/cloud9-setup.md))
 
-**Once you have cloned the repo (or created your Cloud9 workspace) run `bin/setup` in a console window.**
+**Once you have cloned the repo (or created your Cloud9 workspace) choose your branch!!!**
 
-**NOTE:  if you don't use mysql or rvm, you will have to manually walkthrough the setup steps.  [Details](#setup-details)**
+This repo has two branches:  `master` and `thin`.  The `master` branch requires MySql, and will use Rails ActionCable for push communications.  This is great unless your development box has limited resources *or you are using Cloud9 with only a 512MB workspace*.  In this case switch to the `thin` branch by doing a 
+```bash
+git checkout thin
+```
+before proceeding.
+
+**After you have chosen your branch, run `bin/setup` in a console window.**
 
 Some steps in the setup can take 2-3 minutes... be patient...
 
@@ -30,7 +36,7 @@ Once you are installed you can fire up the server and the opal-hot-reloader by r
 
 Once your server is booted visit your newly created Application's home page and you should see a welcome message.  On Cloud9 you can use the preview button (in the top navbar) to bring up your app right in the IDE, which works very well with the hot-reloader.
 
-## Hyperloop Quick Overview
+## Hyperloop Quick Overview (Ignore this if you are following a tutorial)
 
 #### Opal Hot Reloader:
 
