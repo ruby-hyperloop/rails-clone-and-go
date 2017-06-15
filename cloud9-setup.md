@@ -34,7 +34,7 @@ in the terminal (bash) window.
 
 Once your workspace is created you should see the readme displayed.  Just follow the directions and run
 
-`bin/setup` to complete the initialization process.
+`./bin/setup` to complete the initialization process.
 
 ### Step 5: Fire Up The Server
 
