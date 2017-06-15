@@ -6,7 +6,7 @@ Hyperloop.configuration do |config|
     config.prerendering = :off
     config.compress_system_assets = false
   end
-  config.transport = :action_cable
+  config.transport = :simple_poller
   config.import 'opal_hot_reloader' if Rails.env.development?
   config.import 'models/application_record' # force application_record to load first
 end
