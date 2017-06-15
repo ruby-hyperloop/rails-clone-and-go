@@ -21,19 +21,24 @@ You will be invited to create your first workspace.  Cloud9 gives you one privat
 
 Put `git@github.com:ruby-hyperloop/rails-clone-and-go.git` into the field titled titled `Clone from Git or Mercurial URL (optional)`.
 
-Select the "Ruby on Rails" template type, and 
+Select the "Ruby on Rails" template type, and click the [Create workspace] button.
 
-Create Your Workspace!
+### Step 3. Choose Your Branch
+The Hyperloop clone and go repo has two branches: master and thin. If you are running on the default Cloud9 512MB workspace then you should switch the thin branch before proceeding. This will use a lot less resources (but will be using polling instead of ActionCable) for push communications. To checkout the thin branch run
+```bash
+git checkout thin
+```
+in the terminal (bash) window.
 
-### Step 3: Run the Setup Script
+### Step 4: Run the Setup Script
 
 Once your workspace is created you should see the readme displayed.  Just follow the directions and run
 
 `bin/setup` to complete the initialization process.
 
-### Step 4: Fire Up The Server
+### Step 5: Fire Up The Server
 
-Use the cloud9 run command (along the nav top bar) ir run `bin/hyperloop` in a terminal window 
+Use the cloud9 run command (along the nav top bar) or run `bin/hyperloop` in a terminal window 
 
 ### Step 5: Visit the App
 
