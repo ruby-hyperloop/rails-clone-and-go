@@ -44,7 +44,7 @@ Any changes you make in the hyperloop or assets directories will be immediately 
 
 #### Adding a more Components:
 
-`bundle exec rails g hyper:component Hello` will add a `Hello` component template and place it in the `app/hyperloop/components` directory.  Details on the structure of Hyperloop components can be found [here.](http://ruby-hyperloop.org/docs/components/dsl-overview/)
+`bundle exec rails g hyper:component Hello` will add a `Hello` component template and place it in the `app/hyperloop/components` directory.  Details on the structure of Hyperloop components can be found [here.](http://ruby-hyperloop.org/docs/components/docs/#components-dsl-overview)
 
 #### Routing to other components:
 
