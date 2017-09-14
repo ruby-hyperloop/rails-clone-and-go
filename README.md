@@ -1,7 +1,7 @@
 <div style="background-color: white">
 
 <p align="center">
-	<a href="http://ruby-hyperloop.io/" alt="Hyperloop" title="Hyperloop">
+	<a href="http://ruby-hyperloop.org/" alt="Hyperloop" title="Hyperloop">
 		<img src="https://raw.githubusercontent.com/ruby-hyperloop/ruby-hyperloop.io/source/source/images/hyperloop-logo-small-pink.png">
 	</a>
 </p>
@@ -44,7 +44,7 @@ Any changes you make in the hyperloop or assets directories will be immediately 
 
 #### Adding a more Components:
 
-`bundle exec rails g hyper:component Hello` will add a `Hello` component template and place it in the `app/hyperloop/components` directory.  Details on the structure of Hyperloop components can be found [here.](http://ruby-hyperloop.io/docs/components/dsl-overview/)
+`bundle exec rails g hyper:component Hello` will add a `Hello` component template and place it in the `app/hyperloop/components` directory.  Details on the structure of Hyperloop components can be found [here.](http://ruby-hyperloop.org/docs/components/dsl-overview/)
 
 #### Routing to other components:
 
@@ -58,15 +58,15 @@ To have your application respond to different routes and display different compo
 
 #### Models
 
-Create new models like you normally would in Rails, and then move your Rails models to the `app/hyperloop/models` directory to make them accessible to the client.  Access permissions are controlled by policies found in the `app/policies` directory.  More info on Hyperloop models [here.](http://ruby-hyperloop.io/start/models/)
+Create new models like you normally would in Rails, and then move your Rails models to the `app/hyperloop/models` directory to make them accessible to the client.  Access permissions are controlled by policies found in the `app/policies` directory.  More info on Hyperloop models [here.](http://ruby-hyperloop.org/start/models/)
 
 #### Stores
 
-Complex reactive state information should be kept in stores, which should be placed in the `app/hyperloop/stores` directory.  More info on Stores [here.](http://ruby-hyperloop.io/start/stores/)
+Complex reactive state information should be kept in stores, which should be placed in the `app/hyperloop/stores` directory.  More info on Stores [here.](http://ruby-hyperloop.org/start/stores/)
 
 #### Operations
 
-Hyperloop Operations keep Stores and Components separated, provides a central place to put business logic, and can run isomorphically on the client or server.  More info on Operations [here.](http://ruby-hyperloop.io/start/operations/)
+Hyperloop Operations keep Stores and Components separated, provides a central place to put business logic, and can run isomorphically on the client or server.  More info on Operations [here.](http://ruby-hyperloop.org/start/operations/)
 
 #### Have Fun!
 
