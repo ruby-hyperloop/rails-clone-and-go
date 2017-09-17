@@ -1,17 +1,17 @@
 # app/hyperloop/components/app.rb
-class App < Hyperloop::Router  
+class App < Hyperloop::Router
   # usually the top level component is Router which is a kind of Hyperloop component
-  
+
   history :browser
-  
+
   after_mount do
     every(1) { force_update! }
   end
-  
+
   route do
 
     DIV(class: :hyperloophelloworld) do
-      IMG(src: "assets/hyperloop-logo-medium-white.png")
+      IMG(src: 'assets/hyperloop-logo-medium-white.png')
 
       DIV { "Hyperloop at your service! - The time is #{Time.now}" }
 
